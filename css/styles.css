@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+
+p{
+	line-height: 1.7;
+}
+
+/********************** HEADER *********************/
+
+
+.header {
+  background-color: #90c1ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Source Code Pro', monospace;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.phrase {
+	font-family: 'VT323', monospace;
+	margin-top: 0;
+	text-align: right;
+	font-size: 1.25em;
+}
+
+
+.presentation {
+	position: relative;
+	right: -40px;
+	z-index: 2;
+}
+
+.presentation h1{
+	margin-bottom: 7px;
+}
+
+
+
+.divider{
+	border: none;
+	border-top: 5px dotted rgba(76, 153, 230, 0.2);
+	width: 5%;
+	margin: 100px auto;
+}
+
+
+
+.center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.clouds{
+	width: 400px;
+	height: 100px;
+	border-radius: 50px;
+	position: relative;
+	background-color: white;
+
+}
+
+.clouds::before{
+	content: '';
+	position: absolute;
+	top: -70px;
+	left: 45px;
+	background-color: white;
+	width: 180px;
+	height: 160px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.clouds::after{
+	content: '';
+	position: absolute;
+	top: -110px;
+	right: 40px;
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	z-index: 1;
+
+}
+
+/********************** ABOUT SECTION *********************/
+
+.about {
+	border-radius: 5%;
+	width: 50%;
+	height: 100%;	
+	margin: 100px auto 58px auto;
+	font-family: 'Source Code Pro', monospace;
+	text-align: center;
+	box-shadow: 2px 2px 2px 1.2px rgba(76, 153, 230, 0.4);
+}
+
+.descricao-wrap{
+	margin-top: 30px;
+	padding-top: 15px;
+}
+
+.descricao{
+	font-family: 'Montserrat', sans-serif;
+	margin: 10px;
+	font-size: 1.5em;
+}
+
+
+/********************** PROJECTS SECTION *********************/
+
+.projects_header{
+	padding-bottom: 50px;
+}
+
+.projects{
+	width: 70%;
+	height: 100%;	
+	margin: 50px auto 58px auto;
+	font-family: 'Source Code Pro', monospace;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.linha-de-cima{
+	display: flex;
+	flex-direction: row;
+}
+
+.linha-de-baixo{
+	display: flex;
+	flex-direction: row;
+}
+
+.topo-esquerdo{
+	border-radius: 5%;
+	width: 50%;
+	height: 350px;	
+	font-family: 'Source Code Pro', monospace;
+	text-align: center;
+	box-shadow: 2px 2px 2px 1.2px rgba(76, 153, 230, 0.4);
+}
+
+.topo-direito{
+	border-radius: 5%;
+	width: 50%;
+	height: 350px;	
+	font-family: 'Source Code Pro', monospace;
+	text-align: center;
+	box-shadow: 2px 2px 2px 1.2px rgba(76, 153, 230, 0.4);
+}
+
+.canto-esquerdo{
+	border-radius: 5%;
+	width: 50%;
+	height: 350px;	
+	font-family: 'Source Code Pro', monospace;
+	text-align: center;
+	box-shadow: 2px 2px 2px 1.2px rgba(76, 153, 230, 0.4);
+}
+
+.canto-direito{
+	border-radius: 5%;
+	width: 50%;
+	height: 350px;	
+	font-family: 'Source Code Pro', monospace;
+	text-align: center;
+	box-shadow: 2px 2px 2px 1.2px rgba(76, 153, 230, 0.4);
+}
+
+/********************** CONTACT SECTION *********************/
+
+.contact {
+	border-radius: 5%;
+	width: 50%;
+	height: 100%;	
+	margin: 20px auto 58px auto;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 1.5em;
+	text-align: center;
+	padding-bottom: 30px;
+	box-shadow: 2px 2px 2px 1.2px rgba(76, 153, 230, 0.4);
+}
+
+.contact_header{
+	text-align: center;
+	padding-bottom: 50px;
+	font-family: 'Source Code Pro', monospace;
+
+}
+
+.contact p{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.butn {
+  background: #90c1ee;
+  background-image: -webkit-linear-gradient(top, #90c1ee, #4c99e6);
+  background-image: -moz-linear-gradient(top, #90c1ee, #4c99e6);
+  background-image: -ms-linear-gradient(top, #90c1ee, #4c99e6);
+  background-image: -o-linear-gradient(top, #90c1ee, #4c99e6);
+  background-image: linear-gradient(to bottom, #90c1ee, #4c99e6);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #fafafa;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/********************** FOOTER SECTION *********************/
+
+.footer{
+	width: 100%;
+	height: 150px;
+	background-color: #4c99e6;
+	text-align: center;
+}
+
+.footer p{
+	font-family: 'VT323', monospace;
+	color:#90c1ee ;
+	padding-top: 75px;
+}
+
+/************************ MEDIA QUERIES *********************/
+
+@media (max-width: 1067px){
+
+	.projects{
+		width: 70%;
+		align-items: center;
+		justify-content: center;
+
+	}
+	.linha-de-cima{
+		width: 90%;
+		flex-direction: column;
+	}
+
+	.topo-esquerdo{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.topo-direito{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.canto-esquerdo{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.canto-direito{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.linha-de-baixo{
+		width: 90%;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 640px){
+
+	.about{
+		width: 80%;
+	}
+}
+
+@media (max-width: 500px){
+
+	.about{
+		width: 90%;
+	}
+
+	.projects{
+		width: 100%;
+	}
+	.clouds{
+		width: 300px;
+		height: 70px;
+	}
+
+	.clouds::before{
+		top: -50px;
+		width: 120px;
+		height: 100px;
+	}
+
+	.clouds::after{
+		top: -80px;
+		width: 150px;
+		height: 150px;
+	}
+
+	.presentation{
+		font-size: small;
+	}
+
+	.contact{
+		width: 90%;
+	}
+
+	.divider{
+		width: 10%;
+	}
+}
