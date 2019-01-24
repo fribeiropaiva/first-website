@@ -3,36 +3,69 @@
   <head>
     <meta charset="utf-8">
     <title> Filipe Ribeiro - a web developer.</title>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Source+Code+Pro|VT323" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!-- CSS and Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="favicon (1).ico">
+
   </head>
   <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <!-- Logo -->
+        <a class="navbar-bran logo" href="">FWD</a>
+        <!-- Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars toggle-button fa-2x"></i>
+        </span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#projects-menu">Projects</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="#contact-me">Contact</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
     <header  class="header">
-
-        
-
-          
+                 
           <div class="presentation">
-            <h1 class="myName">
+            <h1 class="display-3 myName">
                 I'm Filipe,
             </h1>
-            <p class="phrase">
+            <h3 class="phrase">
                 a web developer.
-            </p>
+            </h3>
           </div>
-        
-
-        
-
+      
     </header>
 
-    <section class="about">
+    <section class="about" id="about-me">
+
         <div class="descricao-wrap">
-          <h1> Welcome!</h1>
-          <p class="descricao">My name is Filipe Ribeiro and I'm a beginner web developer. This is my first ever website and I'm super excited about what is yet to come in my aspiring career. I hope you enjoy my work.Feel free to contact me, I would love to meet you!
+          <h1 class="welcome"> About me</h1>
+          <p class="descricao">My name is Filipe Ribeiro and I'm a beginner web developer. This is my first ever website and I'm super excited about what is yet to come in my aspiring career. I hope you enjoy my work. Feel free to contact me, I would love to meet you!
           </p>
         </div>
       
@@ -41,28 +74,28 @@
 
     <hr class="divider">
 
-    <section class="projects">
+     <section class="projects" id="projects-menu">
      
         <h1 class="projects_header"> Projects </h1>
 
         <div class="row">
 
-            <div class="topo-esquerdo col-lg-6 col-md-12 col-sm-12">
+            <div class="galeria col-lg-6">
               <p class="descricao">Lorem ipsum dolor sit amet
               </p>
             </div>
-            <div class="topo-direito col-lg-6 col-md-12 col-sm-12">
+            <div class="galeria col-lg-6">
             
-              <p class="descricao">Lorem ipsum dolor 
+             <p class="descricao">Lorem ipsum dolor 
               </p>
             </div>
 
-            <div class="canto-direito col-lg-6 col-md-12 col-sm-12">
+            <div class="galeria col-lg-6">
               
               <p class="descricao">Lorem ipsum dolor sit amet
               </p>
             </div>
-            <div class="canto-esquerdo col-lg-6 col-md-12 col-sm-12">
+            <div class="galeria col-lg-6">
             
               <p class="descricao">Lorem ipsum dolor sit amet
               </p>
@@ -72,11 +105,38 @@
 
     </section>
 
+   <!--  <section class="projects" id="projects-menu">
+
+        <h1 class="projects_header"> Projects </h1>
+
+        <div class="row">
+
+            <div class="galeria col-lg-6">
+              <p class="descricao">Lorem ipsum dolor sit amet </p>
+            </div>
+
+            <div class="galeria col-lg-6">
+              <p class="descricao">Lorem ipsum dolor</p>             
+            </div>
+
+            <div class="galeria col-lg-6">              
+              <p class="descricao">Lorem ipsum dolor sit amet</p>
+            </div>
+
+            <div class="galeria col-lg-6">           
+              <p class="descricao">Lorem ipsum dolor sit amet</p>
+            </div>
+
+        </div>
+
+
+    </section> -->
+
      <hr class="divider">
 
-     <section>
+     <section class="contact" id="contact-me">
         <h1 class="contact_header"> Contact Me</h1>
-        <div class="contact">
+        <div>
           <p> I'm currently available for freelance work. If you have an idea and need help to get started, let me know! I can help you!</p>
           <a class="butn" href="mailto:filipepaiva240@gmail.com"> CONTACT ME </a>
         </div>
